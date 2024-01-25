@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 body {
-  background: #f9f7fe;
+  background: #f2e9d070;
   font-family: "Press Start 2P";
 }
 
@@ -37,7 +37,7 @@ header {
 .search-button {
   margin-left: 5px;
   font-size: 10px;
-  background-color: rgba(221, 186, 89, 0.724);
+  background-color: #c59b5e;
   color: white;
   border: none;
   padding: 20px;
@@ -80,9 +80,9 @@ main {
 
 .current-temperature-icon {
   position: relative;
-  top: -8px;
-  font-size: 30px;
-  margin-right: 10px;
+  top: -5px;
+  font-size: 50px;
+  margin-right: 9px;
 }
 
 .current-temperature-value {

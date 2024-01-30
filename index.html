@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
@@ -31,35 +30,39 @@
           />
         </form>
       </header>
-      <br>
+      <br />
       <main>
-        <div class="current-weather">
+        <div class="weather-app-data">
           <div>
             <h1 class="current-city" id="current-city">Barcelona</h1>
             <p class="current-details">
-              <span id="date-now"> Saturday 15:32</span>
-              , Sunny <br />
-              Humidity: <strong>80%</strong>, Wind: <strong>5.6km/h</strong>
+              <span id="date-now">Saturday 15:32 </span>
+              <span>,</span>
+              <span id="description"></span><br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="current-temperature">
-            <span class="current-temperature-icon">☼</span>
-            <span class="current-temperature-value">24</span>
+            <span class="current-temperature-icon" id="icon"></span>
+            <span class="current-temperature-value" id="temperature"></span>
             <span class="current-temperature-unit">°C</span>
           </div>
         </div>
       </main>
       <footer>
-        <br>
-        <br>
+        <br />
+        <br />
+        <br />
+        <br />
         <p>
           This project was coded by
           <a href="https://github.com/MarianaMotaSilva" target="_blank"
             >Mariana Silva</a
           >
           and is
-          <br>
-          <br>
+          <br />
+          <br />
           <a
             href="https://github.com/MarianaMotaSilva?tab=repositories"
             target="_blank"
@@ -67,7 +70,9 @@
             on GitHub</a
           >
           and
-          <a href="https://shecodes-marianamotasilva-weatherapp.netlify.app/" target="_blank"
+          <a
+            href="https://shecodes-marianamotasilva-weatherapp.netlify.app/"
+            target="_blank"
             >hosted on Netlify</a
           >
         </p>

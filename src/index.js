@@ -23,24 +23,22 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = `<img src="${iconUrl}" class="current-temperature-icon" />`;
 
-  displayLocalTime();
+  // Update local time
+  let timezone = response.data.timezone;
+  displayLocalTime(timezone);
 }
 
-function displayLocalTime() {
+function displayLocalTime(timezone) {
   let currentDate = new Date();
   let options = {
+    timeZone: timezone,
     weekday: "long",
     hour: "numeric",
     minute: "numeric",
-    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
   };
   let localTimeString = currentDate.toLocaleString("en-US", options);
   document.querySelector("#date-now").textContent = localTimeString;
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  showWeatherInfoForCity("Barcelona");
-});
 
 function showWeatherInfoForCity(cityName) {
   let apiKey = "00a3d0oe3b36e11ff9bf2a3fd4b8t806";
@@ -58,3 +56,5 @@ function showNewCityInfo(event) {
 
 let form = document.querySelector("#city-form");
 form.addEventListener("submit", showNewCityInfo);
+
+showWeatherInfoForCity("Barcelona");
